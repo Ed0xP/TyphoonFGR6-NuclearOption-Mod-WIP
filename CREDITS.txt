@@ -1,0 +1,32 @@
+EF-2000 Typhoon for Nuclear Option (TyphoonMod) - credits and licence
+=====================================================================
+
+Third-party content
+-------------------
+* Aircraft model (exterior, and the basis of the cockpit):
+    "Eurofighter Typhoon - Fighter Jet - Free" by bohmerang
+    https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579
+    Licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+    The author adds: "Can't be used in any commercial work, only for personal use!"
+    Changes made for this mod: the mesh was cut into moving parts (control surfaces, nozzles, gear, doors,
+    airbrake, weapon bay), re-unwrapped and re-textured; the cockpit was rebuilt and extended with new parts
+    (panels, consoles, displays, seat details, canopy frame, sills) and new textures.
+
+* Cockpit control stick grip: built from a Typhoon stick mesh supplied by the mod's author.
+
+* Engine and fly-by sounds (the files in the sounds folder): supplied by the mod's author.
+
+* The game itself, its aircraft (FS-12 Revoker), its systems and its HUD belong to Shockfront Studios.
+  This mod contains no files of the game. It is not affiliated with or endorsed by Shockfront Studios,
+  Eurofighter GmbH, BAE Systems, Airbus, Leonardo or Metrea.
+
+Licence of this mod
+-------------------
+See LICENSE.txt. In short:
+* The plugin, its source code, scripts and data files are the author's own work: source available, but changing
+  or redistributing them needs the author's permission first.
+* The adapted aircraft model and its textures (typhoon.obj, typhoon_procedural.obj, the .png and .tex files) are
+  CC BY-NC-SA 4.0, as the original model's licence requires: you may share and adapt them, with credit to
+  bohmerang and to this mod, NOT for commercial purposes, and only under that same licence.
+* Do not sell this mod or put it behind a paywall.

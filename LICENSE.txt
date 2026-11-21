@@ -1,0 +1,44 @@
+EF-2000 Typhoon for Nuclear Option (TyphoonMod) - licence
+=========================================================
+Copyright (c) 2026 Assassin, the author of TyphoonMod. All rights reserved, except as set out below.
+
+This mod has two kinds of content under two different licences.
+
+PART A - THE AUTHOR'S OWN WORK (source available, permission required)
+----------------------------------------------------------------------
+Covers: the plugin (TyphoonMod.dll) and its source code, the model-building scripts and tools, the data files
+written for the mod (typhoon_cockpit.txt, typhoon_gear.txt, typhoon_hardpoints.txt, typhoon_keys.txt,
+typhoon_materials.txt, typhoon_surfaces.txt) and the mod's own documentation.
+
+You MAY, without asking:
+  * download, install and use the mod to play the game;
+  * read and study the source code;
+  * link to the mod's official download page;
+  * show the mod in screenshots, videos and streams.
+
+You may NOT, without the author's written permission given beforehand:
+  * change this work, or publish or share a changed version of it or anything built from it;
+  * redistribute it, changed or unchanged, in whole or in part (no re-uploads, mirrors or mod packs);
+  * use it, or any part of it, commercially.
+
+To ask for permission: open an issue on the mod's GitHub page and say what you want to do.
+Permission given to one person for one purpose does not extend to anyone or anything else.
+
+PART B - THE AIRCRAFT MODEL AND ITS TEXTURES (Creative Commons)
+---------------------------------------------------------------
+Covers: typhoon.obj, typhoon_procedural.obj and the .png and .tex files.
+These are adapted from "Eurofighter Typhoon - Fighter Jet - Free" by bohmerang and, as that model's licence
+requires, are shared under the same licence: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+(CC BY-NC-SA 4.0), https://creativecommons.org/licenses/by-nc-sa/4.0/
+Under it you may share and adapt them with credit to bohmerang and to this mod, NOT for commercial purposes, and
+only under that same licence. Part A does not restrict these files. See CREDITS.txt.
+
+NOT COVERED
+-----------
+The sound files in the sounds folder were supplied by the author. They are not part of Part B: do not reuse or
+redistribute them without asking, as for Part A.
+The game, its aircraft and its code belong to Shockfront Studios; this mod contains no files of the game.
+
+NO WARRANTY
+-----------
+The mod is provided as it is, without warranty of any kind. Use it at your own risk.
