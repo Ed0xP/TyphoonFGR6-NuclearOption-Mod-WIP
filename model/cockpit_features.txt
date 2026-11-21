@@ -1,0 +1,104 @@
+toggle +595 175
+toggle +667 170
+toggle +557 220
+toggle +622 220
+toggle +688 220
+toggle +518 328
+toggle +945 208
+toggle +1060 200
+toggle +1033 247
+toggle +1032 311
+toggle +1064 349
+toggle +1432 201
+toggle +1497 201
+toggle +1405 271
+toggle +1404 348
+toggle +1452 348
+toggle +1501 348
+lever +1268 182
+lever +1336 182
+lever +1268 228
+lever +1336 228
+lever +1268 272
+lever +1336 272
+lever +1268 318
+lever +1336 318
+lever +1268 362
+lever +1336 362
+pointer +832 172 22
+pointer +770 215 22
+pointer +1490 281 24
+knob +1172 200 26
+knob +290 310 32
+knob +1164 348 18
+knob +415 255 14
+guardbox +266 170 40x60
+cover +420 160 46x20
+knob +960 240 20
+pointer +960 330 22
+toggle +1110 240
+toggle +1110 290
+toggle +1215 250
+toggle +1215 310
+toggle +836 522
+toggle +803 617
+toggle +803 683
+toggle +803 750
+toggle +877 603
+toggle +875 765
+toggle +1095 615
+toggle +1023 700
+toggle +1024 757
+toggle +1098 758
+toggle +1187 612
+toggle +1186 686
+toggle +1188 760
+lever +885 645
+lever +950 605
+lever +937 660
+lever +883 710
+lever +950 700
+lever +938 754
+knob +738 617 26
+knob +739 740 26
+knob +1024 623 26
+knob +1106 684 26
+pointer +905 533 20
+knob +1347 549 12
+knob +1400 549 12
+knob +600 617 26
+knob +600 745 22
+toggle +660 620
+toggle +660 685
+toggle +660 750
+lever +430 620
+lever +500 620
+lever +430 685
+lever +500 685
+toggle +430 750
+toggle +500 750
+pointer +275 630 24
+knob +345 630 20
+guardbox +285 735 34x44
+toggle +350 705
+toggle +350 762
+cover +150 622 46x20
+toggle +120 700
+toggle +180 700
+knob +150 762 18
+knob 1495 2182 14
+knob 1533 2182 14
+knob 1533 2217 14
+drf 1433 2190 22
+button 1559 2194 12
+button 1559 2216 12
+button 1559 2238 12
+button 1559 2261 12
+button 1496 2211 12
+button 1474 2219 12
+button 1451 2237 12
+button 1451 2260 12
+button 1430 2247 12
+button 1505 2250 12
+button 1482 2265 12
+button 1527 2265 12

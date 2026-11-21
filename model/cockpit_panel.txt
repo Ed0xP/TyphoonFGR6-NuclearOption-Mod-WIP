@@ -1,0 +1,161 @@
+
+paint  1000 240 dark
+grid   693.3 72.3 928 72.3 6 1 35 18 white A/S,XMIT,RAD1,RAD2,DAS,MISC
+grid   834 102.3 928 102.3 3 1 35 18 white NIS,INT,XPDR
+grid   880.7 132.3 928 132.3 2 1 35 18 white NAV,AIDS
+key    928 162.3 35 18 MIDS white
+key    763.3 111 37 24 AP|AT white 27
+key    800.7 139 35 18 HDG white 27
+key    842.7 160.7 35 18 TRK white 27
+key    885.3 182.7 35 18 ALT white 27
+key    926 202.3 35 18 SPD white 27
+grid   975 79.3 1115 173.3 4 3 35 35 led MAP,RDR,FLIR,IFF,PA,ELEV,HSI,DASS,WPN,STOR,FUEL,ENG
+grid   975 211.7 1068.3 211.7 3 1 35 18 white CLM,ATK,APP
+lamp   1072.3 260.7 23 20 red
+lamp   1100.7 260 23 20 green
+disc   691.7 97.7 12 screw
+disc   1042.7 260.7 7 dot
+disc   1130 260 7 dot
+
+paint  950 300 dark
+lamp   700 190 23 18 red
+lamp   727.3 190 23 18 green
+plate  760.7 303 123 119 black
+key    886.7 350 30 30 EMGY green
+blank  938.3 350 35 35
+label  1027 351 7 LOW_HT
+lcd    1028.3 365.3 42 15 0000
+disc   879.3 243.3 10 screw
+disc   975 242 10 screw
+disc   996 305.3 10 screw
+disc   852.7 386 10 screw
+disc   991.7 386.7 10 screw
+disc   663.3 386 10 screw
+
+paint  1000 600 dark
+label  616 450.7 7 MB
+lcd    641 450.3 25 43 1013 blue
+disc   700.7 451.3 30 knob
+key    756 454.7 21 39 SWP blue
+label  666 501.3 7 DWP
+lcd    700.3 501.7 43 37 003|004 blue
+key    751 505.7 30 29 CHD white
+disc   736.7 554.7 40 ring
+lcd    832.3 512 97 109 WPT_01|N53_05.6|W000_10.2 blue
+grid   914 448 1100.7 579 5 4 30 29 blue -,-,-,-,ENT,3,6,9,-,-,2,5,8,0,-,1,4,7,.,CLR
+disc   853.3 423 9 screw
+disc   851.7 599.7 9 screw
+disc   676.7 541.3 9 screw
+
+paint  1080 740 dark
+
+paint  200 760 dark
+disc   62.5 611.3 30 knob
+disc   183.8 611.3 30 knob
+lcd    109.3 609.3 46 30 CLR_GU|279.075
+lcd    145 617 21 24 1
+lcd    233.8 608.8 45 30 CLR_GU|000.000
+lcd    270 617 21 24 16
+label  98.8 630.8 6 RAD_1
+label  223.3 630 6 RAD_2
+line   112.5 636.3 228.3 636.3 2
+label  52.5 646.3 6 BAL
+label  285.8 646.8 6 DEP
+label  51.3 698 6 BRT
+label  285.8 698 6 CON
+disc   106.3 680 60 gauge
+lcd    106.3 681 27 13 4
+disc   230 680 60 gauge
+lcd    230 681 27 13 4
+label  74 706 6 NL
+label  198 706 6 NL
+disc   58.3 668.8 14 dot
+disc   280 667.5 14 dot
+disc   126.8 742 16 dot
+lcd    168 663 37 22 5040
+label  155 681 6 TOTAL
+lcd    180 698 29 16 0930
+label  152 698 6 REAR
+lcd    180 720 27 16 1010
+label  152 720 6 FWD
+
+paint  1290 920 dark
+paint  1770 1160 dark
+grid   1290.5 898.5 1290.5 1073.5 1 5 29 29 led FLIR,BARO|RAD,DCLT,GS|M,LOCK|VV
+disc   1291.3 868.5 9 screw
+disc   1291.3 1098.5 9 screw
+grid   1730.8 872.5 1807 872.5 3 1 32 37 led COM1,COM2,MIDS
+grid   1730.8 1134.3 1807 1134.3 3 1 32 37 led NAV,XPDR,TCN
+plate  1770.3 1003.4 118 166 black
+disc   1705 906.3 6 dot
+disc   1773.8 906.3 6 dot
+disc   1837.5 906.3 6 dot
+disc   1705 1002.5 6 dot
+disc   1837.5 1002.5 6 dot
+disc   1705 1098.8 6 dot
+disc   1773.8 1098.8 6 dot
+disc   1837.5 1098.8 6 dot
+
+paint  1900 3760 panel
+paint  2060 3680 panel
+paint  2240 3650 panel
+paint  2420 3740 panel
+paint  2650 3730 panel
+paint  1750 4060 panel
+paint  2110 4020 panel
+paint  2460 4060 panel
+grid   1808.3 3803.3 1990.7 3803.3 5 1 28 27 led ATCK,PA,MNTC,AUTO|CUE,HEAD
+grid   1747.3 3841.7 1747.3 4070 1 6 28 27 led PAGE|DOWN,FUEL,ENG,HYD,CHK|LIST,LINS
+grid   2049.3 3841.7 2049.3 4070 1 6 28 27 led GPS,XMIT,ALGN|NORM,NAV|SEL,MKR|LOC,RSET
+disc   1753.3 3804 26 knob
+disc   2044.3 3806.7 26 knob
+disc   1796.7 3771.7 9 dot
+disc   1822 3771.7 9 dot
+disc   1846.7 3771.7 9 dot
+disc   1950 3773.3 9 dot
+disc   1974.3 3773.3 9 dot
+disc   1999.3 3773.3 9 dot
+disc   1824.3 3730 55 yring
+key    1824.3 3730 27 27 HOOK led
+disc   1900 3756 24 knob
+key    1982.7 3734.3 30 30 FRNT led
+disc   1766.7 3756.7 9 screw
+disc   2031.7 3759 9 screw
+
+grid   2163.3 3704.5 2344 3704.5 5 1 28 27 led RWS,TWS,HSI,ACM,VS
+grid   2105.3 3745 2105.3 3970.7 1 6 28 27 led ZOOM|IN,AIR|OFF,MAP|TAC,COMP,TRK|NTH,ZOOM|OUT
+grid   2402.7 3745 2402.7 3970.7 1 6 28 27 led RNG|+,A/C|GND,BARS,AZ,RNG|-,DFLT
+disc   2109.3 3705 26 knob
+disc   2398.3 3708.3 26 knob
+disc   2151.7 3670.7 9 dot
+disc   2176 3670.7 9 dot
+disc   2200 3670.7 9 dot
+disc   2301.7 3671.7 9 dot
+disc   2326 3671.7 9 dot
+disc   2350.7 3671.7 9 dot
+disc   2253.3 3655 24 knob
+disc   2383.3 3658.3 9 screw
+disc   2148.3 4046.7 40 knob
+disc   2359.3 4045 40 knob
+lamp   2090 4067.3 22 22 red
+lamp   2419 4067.3 22 22 red
+
+grid   2519 3806.7 2700 3806.7 5 1 28 27 led FUEL,ENG,HYD,WPT,FREQ
+grid   2459 3845 2459 4071.7 1 6 28 27 led ELEV,PA,DCLT,FLIR,IFF,M
+grid   2759 3845 2759 4071.7 1 6 28 27 led STOR,HUD,SLEW,LOCK,DASS,NORM
+disc   2463.3 3808.3 26 knob
+disc   2756 3809.3 26 knob
+disc   2507.3 3775.7 9 dot
+disc   2531.7 3775.7 9 dot
+disc   2556 3775.7 9 dot
+disc   2660 3775.7 9 dot
+disc   2684.3 3775.7 9 dot
+disc   2708.3 3775.7 9 dot
+disc   2607.7 3758.3 24 knob
+lamp   2690 3735 26 26 red
+disc   2530 3741.7 12 ring
+disc   2476.7 3761.7 9 screw
+disc   2740 3761.7 9 screw
+
+vent   1310 280 100
+vent   2673 713.5 100

@@ -1,0 +1,173 @@
+xform 540 1000 7.100 0.285 0.000347
+
+plate  675,410 1170,410 1170,1000 560,1000 540,970
+line   940,412 912,985
+line   790,575 755,945
+line   690,515 676,515 676,660 690,660
+line   1045,470 1045,455 1160,455 1160,505
+label  678,588 CABIN 2.4
+label  706,535 FLOW 2.2
+label  700,642 TEMP 2.2
+knob   735,520 21 plain 20
+knob   727,615 21 plain -30
+toggle 690,735 bat 15
+label  632,738 DEMIST|AUTO 2.2
+label  758,742 REV 2.2
+hazard 705,812 738,885
+toggle 680,842 bat -15
+label  622,852 ECS 2.4
+label  680,922 OFF|RSET 2.2
+label  752,860 RAM_AIR 2.2
+knob   865,495 20 plain 0
+label  818,498 SUIT_TEMP 2.2
+label  908,540 OFF 2.0
+knob   860,595 17 square 30
+label  812,596 FORM 2.2
+label  906,626 OFF 2.0
+toggle 860,685 bat -15
+label  792,694 A_COLL 2.2
+label  910,688 OFF 2.0
+knob   860,765 22 pointer -40
+label  782,748 NAV|BRT/FLASH 2.1
+label  815,790 3 2.0
+label  836,826 2 2.0
+label  872,828 1 2.0
+label  908,820 STDY 2.0
+toggle 845,900 bat 15 state=nav
+label  775,912 EXT_LIGHT|NORM 2.1
+label  905,892 OFF 2.0
+knob   1075,515 25 bar 0
+label  1028,522 NORM 2.0
+label  1086,462 LOW 2.0
+label  1140,520 MED|REV_LIGHTS 2.0
+toggle 985,615 bat 15
+label  945,620 DAY 2.2
+label  1040,617 REV 2.2
+label  987,668 NIGHT 2.2
+knob   1115,635 20 plain 45
+label  1058,662 FLOODS|FWD|AFT 2.0
+toggle 990,735 pyramid -15
+label  940,738 AFLASH|BRT 2.1
+label  1046,752 DIM 2.1
+label  992,802 OFF 2.1
+knob   1110,770 20 plain -20
+label  1060,772 CONSL 2.2
+knob   990,885 22 plain 30
+label  940,895 GL_SHIELD 2.2
+knob   1110,890 20 plain 0
+label  1062,902 DISP 2.2
+screw  650,585
+screw  610,782
+screw  1145,980
+screw  930,995
+
+plate  1170,420 1300,320 1740,320 1740,1000 1170,1000
+line   1172,412 1170,990
+key    1340,405 11 11 REC green
+label  1302,408 VVR 2.0
+toggle 1260,452 bat 15
+label  1215,460 CSG 2.2
+label  1250,506 NORM 2.0
+label  1290,500 REV 2.0
+toggle 1260,540 bat 15
+label  1215,546 CIU 2.2
+toggle 1260,627 bat 15
+label  1205,636 XFEED|NORMAL 2.0
+label  1316,640 OPEN 2.0
+slot   1236,717 1322,737
+probe  1240,727
+label  1188,752 FUEL 2.2
+label  1214,786 IN 2.0
+label  1286,786 OUT 2.0
+label  1333,770 EMG_OUT 2.0
+hazard 1190,835 1322,965
+toggle 1250,885 long 0
+label  1168,900 AIR_DRIVE 2.2
+label  1206,890 EMGY 2.0
+label  1256,936 AUTO 2.0
+label  1306,890 OFF 2.0
+lpcock 1450,385
+label  1408,398 R|LP_COCK 2.1
+label  1456,472 OPEN 2.0
+label  1526,472 SHUT 2.0
+toggle 1615,372 long 15
+label  1566,380 START 2.1
+label  1652,382 STOP 2.1
+key    1605,450 13 13 - blue
+label  1570,452 APU 2.1
+recess 1340,530 1735,530 1735,985 1340,985
+plate  1420,592 1712,592 1712,905 1420,905
+rod    1372,548 1372,925
+lever  1440,886 1700,886
+toggle 1505,695 long 18
+label  1452,678 R|BOOST_PUMP 2.0
+label  1560,702 OFF 2.0
+toggle 1505,770 long 18 state=ign
+label  1468,772 BATT 2.1
+label  1560,772 OFF 2.0
+toggle 1510,835 long 18
+label  1452,840 L|BOOST_PUMP 2.0
+label  1562,838 OFF 2.0
+toggle 1625,632 long 18
+label  1586,636 MIDS 2.1
+label  1672,636 OFF 2.0
+toggle 1625,702 long 18
+label  1590,706 RAD_2 2.1
+label  1680,706 OFF 2.0
+toggle 1625,770 long 18
+label  1590,776 RAD_1 2.1
+label  1684,776 OFF 2.0
+toggle 1630,835 long 18
+label  1598,840 VOICE 2.1
+label  1694,836 OFF 2.0
+screw  1720,340
+screw  1185,985
+
+plate  1745,320 1960,320 1960,1000 1745,1000
+canopy 1760,380 1905,735
+hazard 1822,792 1960,930 orange
+knob   1890,860 30 tee 35
+
+plate  1960,330 2400,330 2400,1010 1960,1010
+recess 2000,385 2380,385 2380,965 2000,965
+plate  2040,410 2360,410 2360,930 2040,930
+rod    1985,395 1985,945
+lever  2045,938 2370,938
+toggle 2085,485 long 18
+label  2014,490 ECM 2.1
+label  2140,496 OFF 2.0
+toggle 2085,625 long 18
+label  2018,630 RAD_ALT 2.0
+label  2140,636 OFF 2.0
+toggle 2085,705 long 18
+label  2016,710 W/S_HTR 2.0
+label  2140,712 OFF 2.0
+toggle 2085,780 cube 18 state=ign
+label  2020,782 R_GEN 2.1
+label  2148,780 OFF 2.0
+toggle 2085,855 cube 18 state=ign
+label  2020,858 L_GEN 2.1
+label  2148,858 OFF 2.0
+toggle 2245,475 long 18
+label  2182,478 HEA 2.1
+label  2300,486 OFF 2.0
+toggle 2245,550 long 18 state=radar
+label  2176,556 RADAR 2.0
+label  2300,560 OFF 2.0
+toggle 2245,625 long 18
+label  2182,630 FLIR 2.1
+label  2300,632 OFF 2.0
+toggle 2245,700 long 18
+label  2182,704 XPDR 2.1
+label  2300,706 OFF 2.0
+toggle 2245,775 long 18
+label  2188,780 INT 2.1
+label  2300,782 OFF 2.0
+toggle 2245,850 long 18
+label  2184,856 MAN 2.1
+label  2300,856 OFF 2.0
+
+plate  2400,340 2800,340 2800,1010 2400,1010
+
+pin    2030,345
+pin    2140,345

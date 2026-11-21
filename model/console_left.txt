@@ -1,0 +1,94 @@
+xform 0 0 7.100 0.290 0.001 -1
+
+plate  8,52 272,52 272,228 8,228
+plate  8,6 272,6 272,48 8,48
+hazard 22,10 58,44
+toggle 40,27 pyramid 15
+label  12,40 NORM 2.1
+label  68,40 REV 2.1
+toggle 92,27 bat 15 state=fa
+label  74,40 RSET 2.1
+label  112,40 REV 2.1
+key    136,27 10 10 - red
+label  136,42 FCS 2.1
+toggle 176,27 bat 15
+label  150,27 WEAPON|LIVE 2.0
+label  198,27 TRAIN 2.0
+toggle 228,27 cube 15
+label  204,27 LASER|COMBAT 1.8
+label  254,27 SAFE|TRAIN 1.8
+plate  280,6 775,6 775,228 280,228
+line   300,95 300,165
+line   300,95 306,95
+line   300,165 306,165
+label  296,130 MIDS 2.4
+label  318,150 A 2.3
+label  318,108 B 2.3
+knob   345,150 17 plain 30
+knob   345,108 17 plain -20
+label  318,52 MSSL 2.3
+knob   345,52 17 plain 10
+label  372,52 TB 2.2
+toggle 345,200 bat 15
+label  318,200 EXPD 2.3
+label  345,213 MAN 1.9
+label  372,200 OFF 2.3
+line   392,125 392,175
+label  388,150 TAC_-_MLS_- 2.2
+knob   418,150 17 plain -30
+label  392,82 I/C 2.3
+knob   418,82 17 plain 20
+line   440,10 440,222
+rocker 500,200
+label  466,200 YAW_TRIM 2.2
+toggle 500,140 long 15
+label  474,140 PTT 2.3
+label  500,112 RAD_1 2.1
+label  516,112 BOTH 2.1
+label  532,112 RAD_2 2.1
+toggle 500,62 pyramid 15
+label  476,74 NORM 2.2
+label  476,44 AMPL 2.2
+label  528,74 REV 2.2
+label  528,44 DFLT 2.2
+line   560,10 560,222
+guard  585,130 621,166
+label  572,190 SECURE_DATA|ERASE 2.2
+toggle 603,60 bat 15
+label  582,60 ANTI-G 2.2
+label  624,60 TEST 2.2
+line   650,10 650,222
+label  668,130 SEAT 2.4
+rocker 700,130
+label  690,165 UP 2.1
+label  712,165 DN 2.1
+knob   700,60 16 pointer 0
+label  674,60 RWR_VOL 2.2
+knob   700,195 16 pointer 0
+label  674,195 TONE 2.2
+toggle 418,200 bat 15
+label  396,200 GUARD 2.3
+label  418,216 ON 2.1
+label  418,184 OFF 2.1
+knob   418,30 15 plain 40
+label  396,30 VOICE 2.3
+toggle 535,200 bat -15
+label  519,200 AUTO_THR 2.2
+label  551,200 OFF 2.1
+toggle 535,140 bat 15
+label  535,158 SQL 2.2
+label  535,124 OFF 2.1
+toggle 603,205 cube 15
+label  582,205 CRYPTO 2.2
+label  624,205 HOLD 2.1
+label  603,215 ZERO 1.8
+knob   603,100 15 plain -25
+label  582,100 DASS 2.2
+knob   745,60 16 pointer 30
+label  724,60 WARN_VOL 2.2
+knob   745,195 16 pointer -40
+label  724,195 MIDS_VOL 2.2
+toggle 745,130 long 15
+label  724,130 DVI 2.3
+label  745,148 ON 2.1
+label  745,113 OFF 2.1
