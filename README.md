@@ -25,7 +25,7 @@ Turns the FS-12 Revoker into a Eurofighter Typhoon: a complete new exterior and 
 - Seven weapon stations placed for the Typhoon: cannon, two bay mounts, two wing pylons and two wingtip rails
 - Wingtip navigation lamps (red and green) with a halo visible from a distance, and formation light strips
 - Painted markings: roundels, serial, tail code and fin badge
-- Its own engine sounds: turbine, dry thrust, afterburner, afterburner light-off and fly-bys
+- Engine sounds are the Revoker's own. No sound files are included; the `sounds` folder takes your own recordings (turbine, dry thrust, afterburner, light-off, fly-bys)
 
 ## Cockpit
 - Fully modelled interior: front panel, both side consoles, pedestal, HUD frame, ejection seat, canopy arch and sills, footwells and the area behind the seat
@@ -70,6 +70,13 @@ Turns the FS-12 Revoker into a Eurofighter Typhoon: a complete new exterior and 
 - To update, unzip the new version over the old one. To remove, delete the `TyphoonMod` folder.
 - If something looks wrong, open an issue with `BepInEx\LogOutput.log` and a screenshot.
 
+## Changes
+- **1.0.1**
+  - Radar page and target bar show only what your faction knows, from the game's own tracking data: a tracked target as before, a lost target at its last known position (dim, no altitude or velocity, marked MEM), a target your faction has nothing on not at all.
+  - No sound files in the download any more. The engine sounds are the game's own unless you add your own recordings.
+  - Credits corrected: the cockpit stick is the game's own FS-12 stick, reused from the running game.
+- **1.0.0** First public release.
+
 ## Source available
 This repository holds the source of the plugin (`src`, C#) and the scripts that build the model and its textures (`model`, `dev/tools`). It is published so you can read it and see how the mod works.
 
@@ -81,5 +88,7 @@ To build the plugin: copy `Directory.Build.props.example` to `Directory.Build.pr
 Free and non-commercial.
 - **The plugin and its source:** source available, permission required. See [LICENSE.txt](LICENSE.txt).
 - **Aircraft model:** ["Eurofighter Typhoon - Fighter Jet - Free" by bohmerang](https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579) (Sketchfab), CC BY-NC-SA 4.0, adapted and extended for this mod. The adapted model and its textures are shared under the same licence. See [CREDITS.txt](CREDITS.txt).
+- **Cockpit stick:** the game's own FS-12 Revoker stick, reused from the running game. No file of the game is included.
+- **Sounds:** none included.
 
 Not affiliated with Shockfront Studios or Eurofighter GmbH.

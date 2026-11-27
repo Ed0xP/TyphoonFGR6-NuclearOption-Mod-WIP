@@ -13,9 +13,11 @@ Third-party content
     airbrake, weapon bay), re-unwrapped and re-textured; the cockpit was rebuilt and extended with new parts
     (panels, consoles, displays, seat details, canopy frame, sills) and new textures.
 
-* Cockpit control stick grip: built from a Typhoon stick mesh supplied by the mod's author.
+* Cockpit control stick: the stick shown in the cockpit is the game's own FS-12 Revoker stick. The plugin
+  reuses it from the running game; no file of the game is included in this mod. The stick grip that is part
+  of the model file (and its ckstick textures) was built for this mod by script and is the mod's own work.
 
-* Engine and fly-by sounds (the files in the sounds folder): supplied by the mod's author.
+* Sounds: this mod contains no sound files. The engine sounds heard are the game's own.
 
 * The game itself, its aircraft (FS-12 Revoker), its systems and its HUD belong to Shockfront Studios.
   This mod contains no files of the game. It is not affiliated with or endorsed by Shockfront Studios,
