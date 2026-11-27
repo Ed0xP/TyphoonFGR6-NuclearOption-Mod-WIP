@@ -2,7 +2,7 @@
 
 Turns the FS-12 Revoker into a Eurofighter Typhoon: a complete new exterior and a fully modelled, working cockpit. Flight performance, weapons and damage are the Revoker's own, unchanged.
 
-**Download:** get both zips from the latest release on the [Releases](../../releases) page.
+**Download:** get `TyphoonMod.zip` from the latest release on the [Releases](../../releases) page.
 
 **AI disclosure:** this mod was developed with AI. The plugin code and the scripts that build the model and textures were written by Claude, Anthropic's AI model, directed and tested in game by Assassin.
 
@@ -56,7 +56,7 @@ Turns the FS-12 Revoker into a Eurofighter Typhoon: a complete new exterior and 
 
 ## Install
 1. Close the game.
-2. Download BOTH zips (part1 and part2) from the latest release and unzip both into the game folder (the one with NuclearOption.exe). They go to the same place: `BepInEx\plugins\TyphoonMod`
+2. Download `TyphoonMod.zip` from the latest release and put it in the game's `BepInEx\plugins` folder. Right-click it, choose "Extract All", then "Extract". That makes the folder `BepInEx\plugins\TyphoonMod` with everything in it. You can delete the zip afterwards. (Or install it with NOMM, the Nuclear Option mod manager.)
 3. Start the game. The first start takes a little longer once, while some textures are prepared.
 
 ## Controls
@@ -67,7 +67,7 @@ Turns the FS-12 Revoker into a Eurofighter Typhoon: a complete new exterior and 
 ## Good to know
 - There are no settings and no config file.
 - Other players only see the Typhoon if they have the mod too; without it they see the Revoker.
-- To update, unzip the new version over the old one. To remove, delete the `TyphoonMod` folder.
+- To update, extract the new zip the same way and let it replace the files. To remove, delete the `TyphoonMod` folder.
 - If something looks wrong, open an issue with `BepInEx\LogOutput.log` and a screenshot.
 
 ## Changes
