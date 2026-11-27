@@ -404,6 +404,7 @@ namespace TyphoonMod
             public int Side;
             public int Kind;
             public bool Selected;
+            public bool Stale;
             public string Name;
         }
 
@@ -472,7 +473,7 @@ namespace TyphoonMod
                     foreach (var k in r.Contacts)
                     {
                         if (k.Selected != (pass == 1)) continue;
-                        Color32 col = k.Side > 0 ? Green : k.Side < 0 ? RdrRed : RdrYel;
+                        Color32 col = k.Stale ? Dim : k.Side > 0 ? Green : k.Side < 0 ? RdrRed : RdrYel;
                         if (Mathf.Abs(k.Az) > AZ || k.RangeM / 1852f > scale)
                         {
                             float ex = cx + hw * Mathf.Clamp(k.Az, -AZ, AZ) / AZ;
@@ -485,7 +486,7 @@ namespace TyphoonMod
                         }
                         float px = cx + hw * k.Az / AZ, py = y1 - ht * (k.RangeM / 1852f) / scale;
                         Symbol(c, px, py, k, col);
-                        if (k.Kind != 1)
+                        if (k.Kind != 1 && !k.Stale)
                         {
                             float vl = Mathf.Sqrt(k.Vx * k.Vx + k.Vz * k.Vz);
                             if (vl > 15f)
@@ -515,12 +516,13 @@ namespace TyphoonMod
             {
                 string nm = (sel.Name ?? "TGT").ToUpperInvariant();
                 if (nm.Length > 9) nm = nm.Substring(0, 9);
-                Color32 col = sel.Side > 0 ? Green : sel.Side < 0 ? RdrRed : RdrYel;
+                Color32 col = sel.Stale ? Grey : sel.Side > 0 ? Green : sel.Side < 0 ? RdrRed : RdrYel;
                 float rn = sel.RangeM / 1852f;
                 string rs = rn < 10f ? rn.ToString("0.0", CultureInfo.InvariantCulture) : Mathf.RoundToInt(rn).ToString();
                 c.Text(nm, 4, by, col);
                 c.Text(rs + "NM", 100, by, White);
-                if (sel.Kind == 0) c.Text(Mathf.RoundToInt(sel.AltFt / 100f).ToString("000") , W - 40, by, Cyan);
+                if (sel.Stale) c.Text("MEM", W - 34, by, Grey);
+                else if (sel.Kind == 0) c.Text(Mathf.RoundToInt(sel.AltFt / 100f).ToString("000") , W - 40, by, Cyan);
                 else c.Text("SFC", W - 34, by, Cyan);
             }
             else if (r.On) c.Text(r.Contacts.Count + " TRK", 4, by, Grey);

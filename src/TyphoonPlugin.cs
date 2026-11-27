@@ -26,7 +26,7 @@ namespace TyphoonMod
 
         public const string Guid = "assassin.nuclearoption.typhoon";
         public const string Name = "Eurofighter Typhoon";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         const BindingFlags AllInstance = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic;
 

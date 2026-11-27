@@ -405,17 +405,23 @@ namespace TyphoonMod
                 if (u == null || u == _ac || u.disabled) continue;
                 try
                 {
-                    Vector3 d = u.transform.position - me;
+                    Vector3 pos; float alt; bool live;
+                    if (!Known(own, u, out pos, out alt, out live)) continue;
+                    Vector3 d = pos - me;
                     var k = new MfdPages.RadarContact
                     {
                         Az = Mathf.Atan2(Vector3.Dot(d, right), Vector3.Dot(d, fwd)) * Mathf.Rad2Deg,
                         RangeM = new Vector2(d.x, d.z).magnitude,
                         Kind = u is Aircraft ? 0 : u is Missile ? 2 : 1,
                         Selected = sel != null && sel.Contains(u),
+                        Stale = !live,
                         Name = u.definition != null && !string.IsNullOrEmpty(u.definition.code) ? u.definition.code : u.unitName
                     };
-                    try { k.AltFt = u.GlobalPosition().y * 3.28084f; } catch { }
-                    try { var rb = u.rb; if (rb != null) { var v = rb.velocity; k.Vx = Vector3.Dot(v, right); k.Vz = Vector3.Dot(v, fwd); } } catch { }
+                    if (live)
+                    {
+                        k.AltFt = alt * 3.28084f;
+                        try { var rb = u.rb; if (rb != null) { var v = rb.velocity; k.Vx = Vector3.Dot(v, right); k.Vz = Vector3.Dot(v, fwd); } } catch { }
+                    }
                     FactionHQ hq = null;
                     try { hq = u.NetworkHQ; } catch { }
                     k.Side = own == null || hq == null ? 0 : hq == own ? 1 : -1;
@@ -424,6 +430,22 @@ namespace TyphoonMod
                 catch { }
             }
             return r;
+        }
+
+        static bool Known(FactionHQ own, Unit u, out Vector3 world, out float altitude, out bool live)
+        {
+            world = default(Vector3); altitude = 0f; live = false;
+            if (own == null || u == null) return false;
+            try
+            {
+                GlobalPosition gp;
+                if (!own.TryGetKnownPosition(u, out gp)) return false;
+                live = own.IsTargetBeingTracked(u);
+                world = gp.ToLocalPosition();
+                altitude = gp.y;
+                return true;
+            }
+            catch { return false; }
         }
 
         MfdPages.TargetInfo TargetData()
@@ -460,7 +482,11 @@ namespace TyphoonMod
                 }
                 catch { }
             if (first == null) return t;
-            Vector3 rel = _root.InverseTransformPoint(first.transform.position);
+            FactionHQ ownHq = null;
+            try { ownHq = _ac.NetworkHQ; } catch { }
+            Vector3 known; float knownAlt; bool knownLive;
+            if (!Known(ownHq, first, out known, out knownAlt, out knownLive)) return t;
+            Vector3 rel = _root.InverseTransformPoint(known);
             t.Range = rel.magnitude;
             t.OffAz = Mathf.Atan2(rel.x, rel.z) * Mathf.Rad2Deg;
             t.OffEl = Mathf.Atan2(rel.y, new Vector2(rel.x, rel.z).magnitude) * Mathf.Rad2Deg;
